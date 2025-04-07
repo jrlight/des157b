@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 81">
+  <defs>
+    <style>
+      .b {
+        fill: #fff;
+      }
+
+      .c {
+        fill: #e2e2e2;
+      }
+
+      .d {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 10px;
+      }
+
+      .e {
+        fill: #a5a5a5;
+      }
+
+      .f {
+        fill: #7f7f7f;
+      }
+
+      .g {
+        fill: #bcbcbc;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="c" x="1" y="1" width="49" height="79"/>
+    <path class="b" d="M49,2v77H2V2h47M51,0H0v81h51V0h0Z"/>
+  </g>
+  <path class="f" d="M30.85,26.34c.29,0,.52.23.52.52v25.48c0,.29-.23.52-.52.52h-10.69c-.29,0-.52-.23-.52-.52v-25.48c0-.29.23-.52.52-.52h10.69M30.85,25.84h-10.69c-.56,0-1.02.46-1.02,1.02v25.48c0,.56.46,1.02,1.02,1.02h10.69c.56,0,1.02-.46,1.02-1.02v-25.48c0-.56-.46-1.02-1.02-1.02h0Z"/>
+  <path class="g" d="M28.56,51.72h-6.11c-.58,0-1.06-.47-1.06-1.06v-20.8h8.23v20.8c0,.58-.47,1.06-1.06,1.06Z"/>
+  <polygon class="e" points="29.27 39.33 21.81 39.33 20.38 29.33 30.79 29.33 29.27 39.33"/>
+  <rect class="b" x="20.38" y="21.25" width="10.41" height="8.86" rx="1.11" ry="1.11"/>
+  <text class="d" transform="translate(18.85 15.45)"><tspan x="0" y="0">ON</tspan></text>
+</svg>

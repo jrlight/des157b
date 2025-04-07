@@ -20,16 +20,17 @@ body {
     --paper2: #FFEEF0;
     --paper3: #DFFFFD;
     --paper4: #FFFFE7;
-    --overlay: #000000cd;
+    --overlay: #000000e1;
     --light: #FFFFFF;
     --lightGlow: #FFF6A1;
+    --lightShadow: #4b4b4ba5;
 
     background-color: var(--bg);
-    color: rgb(235, 235, 235);
+    color: #333;
     transition: all 2s;
     margin: 0 1em;
 
-    font-family: "Inclusive Sans", Arial, sans-serif;
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
 }
 
 body.switch {
@@ -37,29 +38,35 @@ body.switch {
     color: #333;
 }
 
-#overlay{
+#mask{
     position: fixed;
     z-index: 1;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
     background-color: var(--overlay);
-    width: 110%;
-    height: 110%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-#overlay.switch{
+#mask.switch{
     display: none;
 }
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 1.5em 2em;  
+    align-items: baseline;  
+    gap: 0.6em;
 }
 
 h1{
     color: var(--jayLightsOff);
     z-index: 2;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 h1.switch{
@@ -67,40 +74,29 @@ h1.switch{
 }
 
 #banner{
-    font-size: 3em;
+    font-size: 3.1em;
     font-family: "M PLUS Rounded 1c", monospace;
     font-weight: 700;
+    color: var(--bg);
+    text-shadow: 0 0 8px var(--lightShadow);
 }
 
 #banner.switch{
     color: var(--light);
-    text-shadow: 0 0 5px var(--lightGlow);
+    text-shadow: 0 0 10px var(--lightGlow);
 }
 
-button {
+#lightSwitch {
     position: absolute;
+    max-width: 3em;
     z-index: 2;
     top: 20px;
     right: 20px;
-    padding: 12px;
-    background-color: orange;
     color: #333;
-    border: 1px solid transparent;
 }
 
-button:hover {
-    background-color: coral;
+#lightSwitch:hover{
     cursor: pointer;
-}
-
-button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
-}
-
-button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
 }
 
 main {
@@ -117,12 +113,14 @@ main {
 
 main h2{
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 75%;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
     background-color: var(--metal);
+    text-wrap: nowrap;
+    font-weight: 300;
 }
 
 main section {
