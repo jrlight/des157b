@@ -69,6 +69,10 @@ h1{
     font-size: 2rem;
 }
 
+h1:hover{
+    color: var(--light);
+}
+
 h1.switch{
     color: var(--jayLightsOn);
 }
@@ -160,23 +164,28 @@ nav ol, nav ul {
     list-style-type: '-';
     list-style-position: outside;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 0.5em;
 }
 
 section li {
-    padding-left: 1em;
+    padding-left: 0.3em;
+    padding-bottom: 0.1em;
+}
+
+section h3{
+    margin: 0.1em;
 }
 
 section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .3em;
-    /* color: orange; */
+    color: var(--overlay);
 }
 
 section a:hover {
-    /* background-color: orange;
-    color: #333; */
+    color: var(--overlay);
+    text-shadow: 0 0 5px var(--lightShadow);
 }
 
 section.switch a {
@@ -198,8 +207,8 @@ section.switch a:hover {
 @media screen and (min-width: 750px){
 
     header{
-        max-width: 80%;
-        margin: auto;
+        max-width: 90%;
+        margin: 1.5em auto;  
     }
 
     main{
@@ -227,4 +236,16 @@ section.switch a:hover {
         grid-column: 5;
     }
     
+}
+
+@media screen and (min-width:1250px) {
+    header{
+        max-width: 62%;
+    }
+
+    #lightSwitch {
+        top: 20px;
+        right: 20%;
+        color: #333;
+    }    
 }
