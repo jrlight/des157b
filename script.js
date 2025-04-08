@@ -13,13 +13,11 @@
     function handleMouseMove(event) {
         const { clientX, clientY } = event;
     
-        mask.style.background = `radial-gradient(circle at ${clientX}px ${clientY}px, #00000000 5px, var(--overlay) 50px)`;
+        mask.style.background = `radial-gradient(circle at ${clientX}px ${clientY}px, #00000000 5px, var(--overlay) 70px)`;
     }
     
     if(mode === 'dark'){
         document.addEventListener('mousemove', handleMouseMove)
-
-
     }
 
     lightSwitch.addEventListener('click', function() {

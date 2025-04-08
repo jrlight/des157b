@@ -157,34 +157,35 @@ a {
 }
 
 nav ol, nav ul {
-    list-style-type: none;
+    list-style-type: '-';
+    list-style-position: outside;
     margin-left: 0;
     padding-left: 0;
 }
 
 section li {
-    padding-left: 1.2em;
+    padding-left: 1em;
 }
 
 section a {
     line-height: 1.1em;
     display: inline-block;
-    padding: .5em;
-    color: orange;
+    padding: .3em;
+    /* color: orange; */
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    /* background-color: orange;
+    color: #333; */
 }
 
 section.switch a {
-    color: #333;
+    color: var(--overlay);
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    color: var(--overlay);
+    text-shadow: 0 0 5px var(--lightGlow);
 }
 
 @media screen and (min-width: 600px){
