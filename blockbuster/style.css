@@ -10,7 +10,11 @@ img {
     height: auto;
 }
 
-
+h1, h2, h3, p, nav ul {
+    margin: 0;
+    padding: 0;
+}
+   
 video{
     width: 100%;
     max-width: 75em;
@@ -38,6 +42,10 @@ video{
 section{
     color: white;
     background-color: black;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
 }
 
 .hidden{
