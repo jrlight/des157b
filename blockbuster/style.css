@@ -1,0 +1,49 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+video{
+    width: 100%;
+    max-width: 75em;
+    margin: auto;
+}
+
+#popup{
+    background-color: #3224a8;
+    color: white;
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    max-width: 70em;
+    height: 50%;
+}
+
+#popup button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    color: #3224a8;
+}
+
+section{
+    color: white;
+    background-color: black;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.showing{
+    opacity: 1;
+}
