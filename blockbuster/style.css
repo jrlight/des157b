@@ -27,6 +27,7 @@ video{
     color: white;
     box-shadow: 0px 0px 10px white;
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
