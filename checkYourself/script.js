@@ -7,7 +7,7 @@ async function getData() {
 function outputHTML(data){
     let html = '';
     data.Apps.forEach(app => {
-        html += `<div class="time">${app.timeUsed}</div>`;
+        html += `<div class="appUsed">${app.timeUsed}</div>`;
     });
     return html;
 }
