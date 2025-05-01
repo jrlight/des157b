@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#map{
+    height: 95vh;
+    width: 80vw;
+    margin: auto;
+}
