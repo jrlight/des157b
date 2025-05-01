@@ -29,9 +29,14 @@ body{
 #graph .appUsed{
     cursor: pointer;
     color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
 
-@media screen and (min-width:900px) {
+#graph .appUsed:hover{
+}
+
+@media screen and (min-width:600px) {
     body{
         max-width: 75%;
         margin: 1em auto;
