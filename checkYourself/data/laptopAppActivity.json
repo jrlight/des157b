@@ -4,18 +4,22 @@
       "id": "1",
       "appName": "Adobe Illustrator 2025",
       "timeUsed": "4h 13m 9s",
+      "secondsUsed": "15189",
       "windowTitles": [
         {
           "windowName": "cosmicCalanderDraftAltAlt.ai*",
-          "timeUsed": "2hr 26m 13s"
+          "timeUsed": "2hr 26m 13s",
+          "secondsUsed": "8773"
         },
         {
           "windowName": "cosmicCalanderDraftAlt.ai*",
-          "timeUsed": "48m 9s"
+          "timeUsed": "48m 9s",
+          "secondsUsed": "2889"
         },
         {
           "windowName": "cosmicCalanderDraft.ai*",
-          "timeUsed": "16m 29s"
+          "timeUsed": "16m 29s",
+          "secondsUsed": "989"
         }
       ]
     },
@@ -23,81 +27,99 @@
       "id": "2",
       "appName": "Firefox",
       "timeUsed": "4h 2m 44s",
+      "secondsUsed": "14564",
       "windowTitles": [
         {
           "windowName": "Research Protocol and Communication Plan - UWP 110 - Google Docs",
-          "timeUsed": "48m 41s"
+          "timeUsed": "48m 41s",
+          "secondsUsed": "2921"
         },
         {
           "windowName": "(25) Discord (account #1)",
-          "timeUsed": "40m 35s"
+          "timeUsed": "40m 35s",
+          "secondsUsed": "2435"
         },
         {
           "windowName": "• Discord (account #2)",
-          "timeUsed": "29m 16s"
+          "timeUsed": "29m 16s",
+          "secondsUsed": "1759"
         },
         {
           "windowName": "Topic: Discussion: Stakeholder Identification and Documentation",
-          "timeUsed": "16m 41s"
+          "timeUsed": "16m 41s",
+          "secondsUsed": "1001"
         },
         {
           "windowName": "Homework 2",
-          "timeUsed": "9m 19s"
+          "timeUsed": "9m 19s",
+          "secondsUsed": "559"
         },
         {
           "windowName": "1 Cosmic Calendar - Google Drive",
-          "timeUsed": "7m 51s"
+          "timeUsed": "7m 51s",
+          "secondsUsed": "471"
         },
         {
           "windowName": "jrlight@ucdavis.edu - UC Davis Mail",
-          "timeUsed": "7m 13s"
+          "timeUsed": "7m 13s",
+          "secondsUsed": "433"
         },
         {
           "windowName": "e-Reader | Word Structure | Richard Coates | Taylor & Francis Group eB",
-          "timeUsed": "6m 54s"
+          "timeUsed": "6m 54s",
+          "secondsUsed": "414"
         },
         {
           "windowName": "Art Fight Changelog & Suggestions | Trello",
-          "timeUsed": "6m 46s"
+          "timeUsed": "6m 46s",
+          "secondsUsed": "406"
         },
         {
           "windowName": "Reading-Dragons of Eden.pdf - Google Drive",
-          "timeUsed": "5m 33s"
+          "timeUsed": "5m 33s",
+          "secondsUsed": "333"
         },
         {
           "windowName": "Sample Research Protocol and Communication Plan - Google Docs",
-          "timeUsed": "2m 39s"
+          "timeUsed": "2m 39s",
+          "secondsUsed": "159"
         },
         {
           "windowName": "Instagram",
-          "timeUsed": "1m 24s"
+          "timeUsed": "1m 24s",
+          "secondsUsed": "84"
         }
       ]
     },
     {
       "id": "3",
       "appName": "Animal Jam (Play Wild)",
-      "timeUsed": "42m 43s"
+      "timeUsed": "42m 43s",
+      "secondsUsed": "2563"
     },
     {
       "id": "4",
       "appName": "Steam",
-      "timeUsed": "12m 8s"
+      "timeUsed": "12m 8s",
+      "secondsUsed": "728"
     },
     {
       "id": "5",
       "appName": "File Explorer",
-      "timeUsed": "7m 36s"
+      "timeUsed": "7m 36s",
+      "secondsUsed": "456"
     },
     {
       "id": "6",
       "appName": "Calculator",
-      "timeUsed": "3m 37s"
+      "timeUsed": "3m 37s",
+      "secondsUsed": "217"
     },
     {
       "id": "7",
       "appName": "Snipping Tool",
-      "timeUsed": "4s"
+      "timeUsed": "4s",
+      "secondsUsed": "4"
     }
   ]
 }

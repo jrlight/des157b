@@ -28,6 +28,7 @@ body{
 
 #graph .appUsed{
     cursor: pointer;
+    color: #fff;
 }
 
 @media screen and (min-width:900px) {
