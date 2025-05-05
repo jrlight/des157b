@@ -1,11 +1,11 @@
 {
   "Apps": [
     {
-      "id": "1",
       "appName": "Adobe Illustrator 2025",
       "timeUsed": "4h 13m 9s",
       "secondsUsed": "15189",
       "percentUsed": "45.0",
+      "color": "#ad5929",
       "windowTitles": [
         {
           "windowName": "cosmicCalanderDraftAltAlt.ai*",
@@ -25,11 +25,11 @@
       ]
     },
     {
-      "id": "2",
       "appName": "Firefox",
       "timeUsed": "4h 2m 44s",
       "secondsUsed": "14564",
       "percentUsed": "43.2",
+      "color": "#543c9f",
       "windowTitles": [
         {
           "windowName": "Research Protocol and Communication Plan - UWP 110 - Google Docs",
@@ -94,33 +94,32 @@
       ]
     },
     {
-      "id": "3",
       "appName": "Animal Jam (Play Wild)",
       "timeUsed": "42m 43s",
       "secondsUsed": "2563",
-      "percentUsed": "7.6"
-
+      "percentUsed": "7.6",
+      "color": "#519f3c"
     },
     {
-      "id": "4",
       "appName": "Steam",
       "timeUsed": "12m 8s",
       "secondsUsed": "728",
-      "percentUsed": "2.2"
+      "percentUsed": "2.2",
+      "color": "#243a71"
     },
     {
-      "id": "5",
       "appName": "File Explorer",
       "timeUsed": "7m 36s",
       "secondsUsed": "456",
-      "percentUsed": "1.4"
+      "percentUsed": "1.4",
+      "color": "#ffe375"
     },
     {
-      "id": "6",
       "appName": "Calculator",
       "timeUsed": "3m 37s",
       "secondsUsed": "217",
-      "percentUsed": ".6"
+      "percentUsed": ".6",
+      "color": "#9c9c9c"
     }
   ]
 }

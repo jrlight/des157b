@@ -3,18 +3,19 @@
 
     async function getData() {
         const fetchPromise = await fetch('data/laptopAppActivity.json');
-        const data = await fetchPromise.json();    
-        document.querySelector('#graph').innerHTML = outputHTML(data);
+        const data = await fetchPromise.json();   
+        const graph = document.querySelector('#graph');
+        graph.innerHTML = outputHTML(data);
         const appDivs = await document.querySelectorAll('.appUsed');
     
         for(let i = 0; i < appDivs.length; i++){
             appDivs[i].style.width = `${data.Apps[i].percentUsed}%`;
-            // appDivs[i].style.background = `#${i}${i}${i}${i}44`;
             const iMod = i * (50 + i)
-            appDivs[i].style.background = `rgb(${iMod/2}, ${iMod}, 70)`;
+            // appDivs[i].style.background = `rgb(${iMod/2}, ${iMod}, 70)`;
+            appDivs[i].style.background = data.Apps[i].color;
         }
 
-        return data;
+        graph.addEventListener('click', handleClick(data));
     }
     
     function outputHTML(data){
@@ -25,30 +26,24 @@
         return html;
     }
     
-    const allData = getData();
-    let graph = document.querySelector('#graph');
+    function handleClick(data) {
+        const graph = document.querySelector('#graph');
 
-    async function handleClick(allData, graph) {
-        const appDivs = await graph.childNodes;
-        console.log(appDivs);
-        
-        // await appDivs[0].addEventListener('click', async function(){
-        //     graph.children[0].innerHTML = '<p>hi</p>'
-        // });
+        for(let i = 0; i < graph.childNodes.length; i++){
+            graph.childNodes[i].addEventListener('click', function(){
+                graph.childNodes[i].innerHTML = `<div class="popup">${data.Apps[i].appName}</h2><p>${data.Apps[i].timeUsed}</p>`;
 
-        // await graph.addEventListener('click', async function(){
-        //     graph.children[0].innerHTML = '<p>hi</p>'
-        // });
-
-        // for(const appDiv of graph.childNodes){
-        //     console.log(appDiv);
-            
-        //     await appDiv.addEventListener('click', async function(){
-        //         appDiv.innerHTML = '<p>hi</p>';
-        //     });
-        // }
+                if(i === 0 || i === 1){
+                    let html = '';
+                    for(let j = 0; j < data.Apps[i].windowTitles.length; j++){
+                        html += `<div class="windowDiv" title="${data.Apps[i].windowTitles[j].windowName}"></div>`;
+                        console.log(data.Apps[i].windowTitles[j].windowName);
+                    }
+                }
+            });
+        }
     }
 
-    handleClick(allData, graph)
+    getData();
             
 })();
