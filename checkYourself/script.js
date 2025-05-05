@@ -8,10 +8,10 @@
         const appDivs = await document.querySelectorAll('.appUsed');
     
         for(let i = 0; i < appDivs.length; i++){
-            appDivs[i].style.flex = data.Apps[i].secondsUsed;
+            appDivs[i].style.width = `${data.Apps[i].percentUsed}%`;
             // appDivs[i].style.background = `#${i}${i}${i}${i}44`;
             const iMod = i * (50 + i)
-            appDivs[i].style.background = `rgb(${iMod}, 10, 100)`;
+            appDivs[i].style.background = `rgb(${iMod/2}, ${iMod}, 70)`;
         }
 
         return data;
@@ -20,7 +20,7 @@
     function outputHTML(data){
         let html = '';
         data.Apps.forEach(app => {
-            html += `<div class="appUsed" title="${app.appName}">${app.timeUsed}</div>`;
+            html += `<div class="appUsed" title="${app.appName}"></div>`;
         });
         return html;
     }

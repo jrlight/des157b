@@ -5,6 +5,7 @@
       "appName": "Adobe Illustrator 2025",
       "timeUsed": "4h 13m 9s",
       "secondsUsed": "15189",
+      "percentUsed": "45.0",
       "windowTitles": [
         {
           "windowName": "cosmicCalanderDraftAltAlt.ai*",
@@ -28,6 +29,7 @@
       "appName": "Firefox",
       "timeUsed": "4h 2m 44s",
       "secondsUsed": "14564",
+      "percentUsed": "43.2",
       "windowTitles": [
         {
           "windowName": "Research Protocol and Communication Plan - UWP 110 - Google Docs",
@@ -95,31 +97,30 @@
       "id": "3",
       "appName": "Animal Jam (Play Wild)",
       "timeUsed": "42m 43s",
-      "secondsUsed": "2563"
+      "secondsUsed": "2563",
+      "percentUsed": "7.6"
+
     },
     {
       "id": "4",
       "appName": "Steam",
       "timeUsed": "12m 8s",
-      "secondsUsed": "728"
+      "secondsUsed": "728",
+      "percentUsed": "2.2"
     },
     {
       "id": "5",
       "appName": "File Explorer",
       "timeUsed": "7m 36s",
-      "secondsUsed": "456"
+      "secondsUsed": "456",
+      "percentUsed": "1.4"
     },
     {
       "id": "6",
       "appName": "Calculator",
       "timeUsed": "3m 37s",
-      "secondsUsed": "217"
-    },
-    {
-      "id": "7",
-      "appName": "Snipping Tool",
-      "timeUsed": "4s",
-      "secondsUsed": "4"
+      "secondsUsed": "217",
+      "percentUsed": ".6"
     }
   ]
 }
