@@ -14,14 +14,6 @@
         }
 
         graph.addEventListener('click', handleClick(data));        
-
-        // if(windowDivs.length > 1){
-        //     console.log('haiii');
-            
-        //     for(let i = 0; i < windowDivs.length; i++){
-        //         windowDivs[i].style.background = `rgb(${i}, ${i+2}, 70)`;
-        //     }
-        // }
     }
     
     function outputHTML(data){
