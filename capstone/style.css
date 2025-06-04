@@ -16,3 +16,17 @@ h1, h2, h3, p, ul, ol{
     margin: 0;
     padding: 0;
 }
+
+.emphasis{
+    font-size: 3em;
+}
+
+main{
+    display: flex;
+}
+
+.pageLink{
+    max-width: 10em;
+    background-color: aquamarine;
+    border-radius: 2em;
+}
