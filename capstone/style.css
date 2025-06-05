@@ -24,12 +24,18 @@ h1, h2, h3, p, ul, ol{
     font-size: 3em;
 }
 
-main{
+main.home{
     display: flex;
+    gap: 1em;
 }
 
 .pageLink{
     max-width: 10em;
     background-color: aquamarine;
     border-radius: 2em;
+}
+
+a{
+    display: block;
+    padding-bottom: 1em;
 }
