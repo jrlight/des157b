@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    --flagBlue: #aae3ff;
+    --flagPink: #ffaae4;
+    --flagWhite: #ffffff;
 }
 
 nav ul, nav ol{
