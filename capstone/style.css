@@ -3,10 +3,12 @@
 *{
     box-sizing: border-box;
     --flagBlue: #aae3ff;
-    --flagPink: #ffaae4;
+    --flagPink: #feb2e6;
     --flagWhite: #ffffff;
     --accentBlue: #2062a3;
-    --accentPink: #cb31af;
+    --accentPink: #b32799;
+    --semiTransparentFlagBlue: #aae3ffa7;
+    --semiTransparentFlagPink: #feb2e6a7;
     --baseText: #000000;
     font-family: "Nunito Sans", Arial, sans-serif;
 }
@@ -81,21 +83,67 @@ h2{
     margin-bottom: 1em;
 }
 
+header h2{
+    margin-bottom: 0;
+}
+
 .linkContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1em;
 }
 
 .pageLink{
-    max-width: 12em;
-    background-color: aquamarine;
-    padding: 2em;
-    border-radius: 100%;
+    width: fit-content;
+    
+    max-width: 13em;
+    padding: 1.7em;
+    border-radius: 12em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    background-color: var(--flagPink);
+
+    transition: box-shadow 0.5s ease;
+}
+
+.pageLink:first-child{
+    background-color: var(--flagBlue);
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-self: center;
+
+}
+.pageLink:first-child:hover{
+    box-shadow: 0 0 1.5em var(--semiTransparentFlagPink);
+}
+
+.pageLink:hover{
+    box-shadow: 0 0 1.5em var(--semiTransparentFlagBlue);
+}
+
+.pageLink:nth-child(2){
+    background-color: var(--flagPink);
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: last baseline;
+}
+
+.pageLink:nth-child(3){
+    background-color: var(--flagPink);
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: first baseline;
+}
+
+.pageLink h2 a{
+    font-family: "Finger Paint", Serif;
+    /* font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 700; */
+    font-size: 1.5rem;
 }
 
 ul{
@@ -108,6 +156,11 @@ li{
 a{
     display: block;
     padding-bottom: 1em;
+    color: var(--accentBlue);
+}
+
+a:hover{
+    color: var(--accentPink);
 }
 
 .plainText{
