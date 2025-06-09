@@ -5,6 +5,9 @@
     --flagBlue: #aae3ff;
     --flagPink: #ffaae4;
     --flagWhite: #ffffff;
+    --accentBlue: #2062a3;
+    --accentPink: #cb31af;
+    --baseText: #000000;
     font-family: "Nunito Sans", Arial, sans-serif;
 }
 
@@ -21,6 +24,7 @@ img{
 h1, h2, h3, p, ul, ol{
     margin: 0;
     padding: 0;
+    color: var(--baseText);
 }
 
 a{
@@ -54,7 +58,10 @@ a{
 
 body{
     margin: auto;
-    max-width: 100vw;
+}
+
+main{
+    margin: 2.5em;
 }
 
 header{
@@ -68,6 +75,10 @@ h1, h2{
 h1 .emphasis{
     font-size: 1.6em;
     font-family: "Freckle Face", Cursive;
+}
+
+h2{
+    margin-bottom: 1em;
 }
 
 .linkContainer{
@@ -97,6 +108,58 @@ li{
 a{
     display: block;
     padding-bottom: 1em;
+}
+
+.plainText{
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* accordian styling */
+
+.ac .ac-trigger:focus {
+  color: var(--baseText);
+}
+
+.vocabList{
+    padding-inline-start: 1.5em;
+
+}
+
+.vocabList .ac{
+    border: none;
+    width: fit-content;
+}
+
+.vocabList .ac-header{
+    list-style-type: decimal;
+    list-style-position: outside;
+    display: list-item;
+    width: fit-content;
+
+}
+
+.ac .ac-trigger {
+    padding: 0.3em 1.3em 0.3em 0.5em;
+}
+
+.ac .ac-trigger::after {
+  color: var(--accentPink);
+}
+
+.vocabList .ac-header button{
+    /* font-family: "Delius", cursive;
+    font-size: 1.3rem; */
+    background-color: var(--flagBlue);
+    margin-left: 0.5em;
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.vocabList .ac .ac-text{
+    padding: 0.5em 0.6em 0.9em;
 }
 
 @media screen and (min-width: 600px){

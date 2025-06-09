@@ -2,6 +2,12 @@
     'use strict';
 
     console.log('reading js');
+    
+    const vocabList = new Accordion(".vocabList", {
+        duration: 200,
+        showMultiple: true,
+        openOnInit: [0,1,2,3]
+    });
 
     const accordion = new Accordion(".accordion-container", {
         duration: 400,
@@ -19,8 +25,6 @@
         accordion.closeAll();
     })
 
-    console.log(accordion);
-    console.log(accordion.duration);
-    
+    console.log(accordion);    
 
 })();
