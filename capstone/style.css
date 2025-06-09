@@ -57,15 +57,20 @@ body{
     max-width: 100vw;
 }
 
-h1{
-    font-family: "Finger Paint", sans-serif;
+header{
+    margin: 2em;
 }
 
-.emphasis{
-    font-size: 1.5em;
+h1, h2{
+    font-family: "Finger Paint", Serif;
 }
 
-main.home{
+h1 .emphasis{
+    font-size: 1.6em;
+    font-family: "Freckle Face", Cursive;
+}
+
+.linkContainer{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
