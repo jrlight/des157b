@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Finger+Paint&family=Freckle+Face&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200;1,6..12,400;1,6..12,600;1,6..12,700;1,6..12,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Freckle+Face&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200;1,6..12,400;1,6..12,600;1,6..12,700;1,6..12,900&display=swap" rel="stylesheet">
     <link href="accordion.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>What is HRT</title>
@@ -16,13 +16,39 @@
 </head>
 <body>
     <header>
+        <a class="homeBtn" href="index.html">
+            <svg
+            width="39.805592mm"
+            height="36.890713mm"
+            viewBox="0 0 39.805592 36.890713"
+            version="1.1"
+            id="svg11988"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+                <defs
+                    id="defs11985" />
+                <g
+                    id="layer1"
+                    transform="translate(-59.159705,-98.429642)">
+                    <path
+                    style="fill:none;stroke:var(--accentPink);stroke-width:5.29201;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+                    d="m 61.805428,116.3888 c 16.771689,-14.58408 17.257825,-15.31328 17.257825,-15.31328 0,0 17.014757,14.62711 17.257825,14.87018 0.243067,0.24307 -5.590564,1.0153 -5.590564,1.0153 l 0.729205,15.67032 -8.22128,-0.24306 c 0,0 1.043216,-10.65196 -3.575075,-10.65196 -4.618291,0 -4.861359,10.45192 -4.618291,10.69499 0.243068,0.24306 -7.89215,0.24306 -7.89215,0.24306 v -14.82714 z"
+                    id="path8237" />
+                </g>
+            </svg>
+        </a>
+        
         <h1><span class="emphasis">W</span>hat is <span class="emphasis">H</span>ormone <span class="emphasis">R</span>eplacement <span class="emphasis">T</span>herapy?</h1>
     </header>
 
     <main>
-        <h2>First,<span class="plainText"> we need to learn about the endocrine system.</span></h2>
-        
+        <h2>First,<span class="plainText"> we need to understand how the body works. Here are some very important words:</span></h2>
+
         <div class="vocabList">
+
+            <button class="openAll">Open All</button>
+            <button class="closeAll">Close All</button>
+
             <ol class="ac">
                 <h2 class="ac-header">
                     <button type="button" class="ac-trigger">Hormones</button>
@@ -43,12 +69,21 @@
 
             <div class="ac">
                 <h2 class="ac-header">
-                <button type="button" class="ac-trigger">Types of sex hormones</button>
+                <button type="button" class="ac-trigger">Types of sex hormones:</button>
                 </h2>
                 <div class="ac-panel">
-                <p class="ac-text">Androgens (Testosterone)</p>
-                <p class="ac-text">Estrogen</p>
-                <p class="ac-text">Progesterone</p>
+                <h3 class="ac-text">Androgens (Testosterone)</h3>
+                    <ul>
+                        <li>The most common androgen is the hormone testosterone. In medium to large amounts, testosterone leads to masculinizing. However, testosterone is present in all sexes— small amounts of testosterone are important for keeping anyone healthy. Testes generally make large amounts of testosterone, and ovaries generally to make small testosterone.</li>
+                    </ul>
+                <h3 class="ac-text">Estrogen</h3>
+                    <ul>
+                        <li>In medium to large amounts, these hormones lead to masculinizing. However, everyone makes some androgens (even non-intersex cis women).</li>
+                    </ul>
+                <h3 class="ac-text">Progesterone</h3>
+                    <ul>
+                        <li>In medium to large amounts, these hormones lead to masculinizing. However, everyone makes some androgens (even non-intersex cis women).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -57,7 +92,24 @@
                 <button type="button" class="ac-trigger">Gonads</button>
                 </h2>
                 <div class="ac-panel">
-                <p class="ac-text">Gonads are the organs that produce sex hormones. There are two types of gonads in humans— ovaries and testes. Additionally, some people have Gonadal Dysgenesis, where gonads never develop into either.</p>
+                <p class="ac-text">Gonads are the organs that produce sex hormones. There are two types of gonads in humans— ovaries and testes. Additionally, some people have Gonadal Dysgenesis, where gonads never develop into either, and instead become undifferentiated "streak" gonads that do not produce hormones.</p>
+                </div>
+            </div>
+            <div class="ac">
+                <h2 class="ac-header">
+                <button type="button" class="ac-trigger">Ovaries</button>
+                </h2>
+                <div class="ac-panel">
+                <p class="ac-text">Gonads are the organs that produce sex hormones. There are two types of gonads in humans— ovaries and testes. Additionally, some people have Gonadal Dysgenesis, where gonads never develop into either, and instead become undifferentiated "streak" gonads that do not produce hormones.</p>
+                </div>
+            </div>
+
+            <div class="ac">
+                <h2 class="ac-header">
+                <button type="button" class="ac-trigger">Testes</button>
+                </h2>
+                <div class="ac-panel">
+                <p class="ac-text">Gonads are the organs that produce sex hormones. There are two types of gonads in humans— ovaries and testes. Additionally, some people have Gonadal Dysgenesis, where gonads never develop into either, and instead become undifferentiated "streak" gonads that do not produce hormones.</p>
                 </div>
             </div>
 
@@ -82,9 +134,7 @@
             </div>
         </div>
 
-        <button class="openAll">Open All</button>
-        <button class="closeAll">Close All</button>
-
+<!-- 
         <div class="accordion-container">
             <div class="ac">
                 <h2 class="ac-header">
@@ -132,12 +182,8 @@
                 <p class="ac-text">- Gender affirmation</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <a href="why.html">Why do people take HRT?</a>
-        <a href="history.html">What is the history of HRT?</a>
-
-        <a href="index.html">Back to Home</a>
     </main>
 
     <footer>

@@ -68,6 +68,7 @@ main{
 
 header{
     margin: 2em;
+    text-align: center;
 }
 
 h1, h2{
@@ -87,6 +88,23 @@ header h2{
     margin-bottom: 0;
 }
 
+.homeBtn{
+    position: absolute;
+    top:2em;
+    right:1.5em;
+    left: auto;
+}
+
+.homeBtn svg{
+    /* stroke: var(--accentBlue);
+    background-color: #000000; */
+    max-width: 3em;
+}
+
+p{
+    margin-bottom: 0.5em;
+}
+
 .linkContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,11 +117,11 @@ header h2{
     
     max-width: 13em;
     padding: 1.7em;
-    border-radius: 12em;
+    border-radius: 12em 12em 10em 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
     background-color: var(--flagPink);
 
@@ -112,11 +130,14 @@ header h2{
 
 .pageLink:first-child{
     background-color: var(--flagBlue);
+}
+
+#what{
     grid-column: 1/3;
     grid-row: 1;
     justify-self: center;
-
 }
+
 .pageLink:first-child:hover{
     box-shadow: 0 0 1.5em var(--semiTransparentFlagPink);
 }
@@ -125,14 +146,14 @@ header h2{
     box-shadow: 0 0 1.5em var(--semiTransparentFlagBlue);
 }
 
-.pageLink:nth-child(2){
+.home .pageLink:nth-child(2){
     background-color: var(--flagPink);
     grid-column: 1;
     grid-row: 2;
     justify-self: last baseline;
 }
 
-.pageLink:nth-child(3){
+.pageLink:nth-child(last){
     background-color: var(--flagPink);
     grid-column: 2;
     grid-row: 2;
@@ -163,13 +184,48 @@ a:hover{
     color: var(--accentPink);
 }
 
+/* .homeBtn path:hover{
+    stroke: var(--accentBlue);
+} */
+
+
 .plainText{
     font-family: "Nunito Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
 /* accordian styling */
+
+.openAll, .closeAll{
+    border: none;
+    position: absolute;
+    top:-0.5em;
+    transition: all 0.5s ease;
+}
+
+.openAll{
+    right: 5em;
+    background: var(--semiTransparentFlagBlue);
+}
+
+.closeAll{
+    right: 0;    
+    background: var(--semiTransparentFlagPink);
+}
+
+.openAll:hover{
+    background: var(--flagBlue);
+}
+
+.closeAll:hover{
+    background: var(--flagPink);
+}
 
 .ac .ac-trigger:focus {
   color: var(--baseText);
@@ -177,6 +233,7 @@ a:hover{
 
 .vocabList{
     padding-inline-start: 1.5em;
+    position: relative;
 
 }
 
@@ -193,31 +250,38 @@ a:hover{
 
 }
 
-.ac .ac-trigger {
-    padding: 0.3em 1.3em 0.3em 0.5em;
+.vocabList .ac .ac-trigger {
+    padding: 0.3em .3em 0.3em 0.5em;
 }
 
-.ac .ac-trigger::after {
-  color: var(--accentPink);
+.vocabList .ac .ac-trigger::after, .vocabList .ac.is-active > .ac-header .ac-trigger::after {
+    content: none;
 }
 
 .vocabList .ac-header button{
     /* font-family: "Delius", cursive;
     font-size: 1.3rem; */
-    background-color: var(--flagBlue);
+    background: var(--flagBlue);
     margin-left: 0.5em;
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
 }
 
-.vocabList .ac .ac-text{
+.vocabList .ac .ac-text:last-child{
     padding: 0.5em 0.6em 0.9em;
 }
 
 @media screen and (min-width: 600px){
     body{
         max-width: 90vw;
+    }
+
+    .homeBtn{
+        position: absolute;
+        top:0;
+        right: auto;
+        left:3em;
     }
     
 }
@@ -226,4 +290,11 @@ a:hover{
     body{
         max-width: 75vw;
     } 
+
+    .homeBtn{
+        position: fixed;
+        top:0;
+        right: auto;
+        left:5em;
+    }
 }
