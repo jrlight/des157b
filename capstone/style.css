@@ -87,6 +87,13 @@ h1 .emphasis{
     text-align: center;
 }
 
+ul{
+    padding-inline-start: 1.6em;
+}
+
+li{
+}
+
 a{
     display: block;
     padding-bottom: 1em;
