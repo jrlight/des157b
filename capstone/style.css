@@ -87,7 +87,7 @@ header h2{
 
 .homeBtn{
     position: absolute;
-    top:2em;
+    top:2.7em;
     right:1.5em;
     left: auto;
 }
@@ -194,6 +194,14 @@ ul{
 /* .homeBtn path:hover{
     stroke: var(--accentBlue);
 } */
+
+main a{
+    text-align: center;
+}
+
+#sources a{
+    text-align: left;
+}
 
 
 .plainText{
@@ -307,7 +315,7 @@ footer a:hover{
     
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 720px){
     body{
         max-width: 75vw;
     } 
@@ -317,5 +325,18 @@ footer a:hover{
         top:0;
         right: auto;
         left:5em;
+    }
+}
+
+@media screen and (min-width: 750px){
+    body{
+        max-width: 60vw;
+    } 
+
+    .homeBtn{
+        position: fixed;
+        top:0;
+        right: auto;
+        left:10em;
     }
 }
