@@ -34,7 +34,7 @@ a{
 }
 
 /* font reference */
-.freckle-face-regular {
+/* .freckle-face-regular {
   font-family: "Freckle Face", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -47,9 +47,9 @@ a{
 .nunito-sans {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  /* font weights: 100, 400, 600, 700, 900; */
-  /* font styles: normal, italic */
-}
+  font weights: 100, 400, 600, 700, 900;
+  font styles: normal, italic
+} */
 
 /* page style */
 
