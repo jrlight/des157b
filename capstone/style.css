@@ -44,11 +44,6 @@ a{
   font-weight: 400;
   font-style: normal;
 }
-.delius-regular {
-  font-family: "Delius", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 .nunito-sans {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -60,6 +55,7 @@ a{
 
 body{
     margin: auto;
+    background-color: var(--flagWhite);
 }
 
 main{
@@ -81,6 +77,7 @@ h1 .emphasis{
 }
 
 h2{
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -105,6 +102,22 @@ p{
     margin-bottom: 0.5em;
 }
 
+a{
+    display: block;
+    margin-bottom: 1em;
+    padding: 0 0.1em;
+    color: var(--accentBlue);
+    transition: all 0.2s ease-out;
+}
+
+a:hover{
+    color: var(--accentPink);
+}
+
+.subtitle{
+    font-style: italic;
+}
+
 .linkContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,7 +127,6 @@ p{
 
 .pageLink{
     width: fit-content;
-    
     max-width: 13em;
     padding: 1.7em;
     border-radius: 12em 12em 10em 10em;
@@ -124,12 +136,20 @@ p{
     justify-content: flex-end;
     text-align: center;
     background-color: var(--flagPink);
-
     transition: box-shadow 0.5s ease;
+}
+
+.pageLink h2{
+    margin-bottom: 0.1em;
+}
+
+.pageLink a{
+    padding: 0;
 }
 
 .pageLink:first-child{
     background-color: var(--flagBlue);
+    justify-self: last baseline;
 }
 
 #what{
@@ -171,19 +191,6 @@ ul{
     padding-inline-start: 1.6em;
 }
 
-li{
-}
-
-a{
-    display: block;
-    padding-bottom: 1em;
-    color: var(--accentBlue);
-}
-
-a:hover{
-    color: var(--accentPink);
-}
-
 /* .homeBtn path:hover{
     stroke: var(--accentBlue);
 } */
@@ -197,7 +204,21 @@ a:hover{
 
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+footer a:hover{
+    outline: solid 0.1em var(--semiTransparentFlagBlue);
+}
+
+.homeLink{
+    color: var(--accentPink);
+    justify-self: center;
+}
+
+.homeLink:hover{
+    outline: solid 0.3em var(--semiTransparentFlagPink);
+    color: var(--accentBlue);
 }
 
 /* accordian styling */
@@ -237,7 +258,7 @@ footer{
 
 }
 
-.vocabList .ac{
+.vocabList .ac, .hrtInfo .ac{
     border: none;
     width: fit-content;
 }

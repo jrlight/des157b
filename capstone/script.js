@@ -22,10 +22,10 @@
     }
     
 
-    // const accordion = new Accordion(".accordion-container", {
-    //     duration: 400,
-    //     showMultiple: true
-    // });
+    const accordion = new Accordion(".hrtInfo", {
+        duration: 400,
+        showMultiple: true
+    });
 
     const openAllBtn = document.querySelector('.openAll');
     const closeAllBtn = document.querySelector('.closeAll');
