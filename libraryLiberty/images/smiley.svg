@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="smiley" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.04 95.97">
+  <defs>
+    <style>
+      .b {
+        stroke-linejoin: round;
+        stroke-linecap: round; 
+      }
+
+      .b, .c {
+        fill: none;
+        stroke: #00ff0c;
+        stroke-width: 3px;
+      }
+
+      .c {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="c" d="M13,18.69c27.29-39.94,103.97-5.17,73.5,51.77C58.21,123.31-29.71,81.19,13,18.69Z"/>
+  <path class="b" d="M59.5,40.82c-1.35-12.88-.03-29.53,1.89-15.34,1.76,12.96-.93,24.47-1.89,15.34Z"/>
+  <path class="b" d="M20.16,55.32h55.49c.85,25.48-45.07,47.46-55.49,0Z"/>
+  <path class="b" d="M32.96,34.36c-.51,12.56,3.06,15.01,3.06-4.89s-2.55-7.67-3.06,4.89Z"/>
+</svg>
