@@ -10,6 +10,7 @@
     --semiTransparentFlagBlue: #aae3ffa7;
     --semiTransparentFlagPink: #feb2e6a7;
     --baseText: #000000;
+    --semiTransparentBaseText: #0000005d;
     font-family: "Nunito Sans", Arial, sans-serif;
 }
 
@@ -81,6 +82,11 @@ h2{
     margin-bottom: 1em;
 }
 
+h3{
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
 header h2{
     margin-bottom: 0;
 }
@@ -88,14 +94,14 @@ header h2{
 .homeBtn{
     position: absolute;
     top:2.7em;
-    right:1.5em;
+    right:1em;
     left: auto;
 }
 
 .homeBtn svg{
     /* stroke: var(--accentBlue);
     background-color: #000000; */
-    max-width: 3em;
+    max-width: 2.7em;
 }
 
 p{
@@ -120,9 +126,11 @@ a:hover{
 
 .linkContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     column-gap: 1em;
+    row-gap: 0.3em;
+    margin-bottom: 2em;
 }
 
 .pageLink{
@@ -139,23 +147,21 @@ a:hover{
     transition: box-shadow 0.5s ease;
 }
 
-.pageLink h2{
+.pageLink:first-child{
+    background-color: var(--flagBlue);
+    justify-self: first baseline;
+}
+
+.pageLink:nth-child(2){
+    justify-self: last baseline;
+}
+
+ .pageLink h2{
     margin-bottom: 0.1em;
 }
 
 .pageLink a{
     padding: 0;
-}
-
-.pageLink:first-child{
-    background-color: var(--flagBlue);
-    justify-self: last baseline;
-}
-
-#what{
-    grid-column: 1/3;
-    grid-row: 1;
-    justify-self: center;
 }
 
 .pageLink:first-child:hover{
@@ -164,6 +170,12 @@ a:hover{
 
 .pageLink:hover{
     box-shadow: 0 0 1.5em var(--semiTransparentFlagBlue);
+}
+
+.home .pageLink:first-child{
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-self: center;
 }
 
 .home .pageLink:nth-child(2){
@@ -182,13 +194,11 @@ a:hover{
 
 .pageLink h2 a{
     font-family: "Finger Paint", Serif;
-    /* font-family: "Nunito Sans", Arial, sans-serif;
-    font-weight: 700; */
     font-size: 1.5rem;
-}
+} 
 
 ul{
-    padding-inline-start: 1.6em;
+    padding-inline-start: 1.8em;
 }
 
 /* .homeBtn path:hover{
@@ -208,6 +218,7 @@ main a{
     font-family: "Nunito Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    display: inline;
 }
 
 footer{
@@ -256,6 +267,10 @@ footer a:hover{
     background: var(--flagPink);
 }
 
+.ac .ac-trigger:hover {
+    background: var(--semiTransparentFlagBlue);
+}
+
 .ac .ac-trigger:focus {
   color: var(--baseText);
 }
@@ -266,7 +281,7 @@ footer a:hover{
 
 }
 
-.vocabList .ac, .hrtInfo .ac{
+.ac{
     border: none;
     width: fit-content;
 }
@@ -279,15 +294,20 @@ footer a:hover{
 
 }
 
-.vocabList .ac .ac-trigger {
-    padding: 0.3em .3em 0.3em 0.5em;
+.ac .ac-trigger {
+    padding: 0.3em 1.4em 0.3em 0.5em;
 }
 
-.vocabList .ac .ac-trigger::after, .vocabList .ac.is-active > .ac-header .ac-trigger::after {
-    content: none;
+.ac .ac-trigger::after{
+    content: "+";
+    color: var(--semiTransparentBaseText);
 }
 
-.vocabList .ac-header button{
+.ac.is-active > .ac-header .ac-trigger::after {
+    content: "\2013";
+}
+
+.ac .ac-header button{
     /* font-family: "Delius", cursive;
     font-size: 1.3rem; */
     background: var(--flagBlue);
@@ -297,8 +317,23 @@ footer a:hover{
     font-weight: 700;
 }
 
-.vocabList .ac .ac-text:last-child{
+.ac .ac-text:last-child{
     padding: 0.5em 0.6em 0.9em;
+}
+
+@media screen and (min-width: 520px){
+    .linkContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .pageLink:first-child{
+        justify-self: last baseline;
+    }
+
+    .pageLink:nth-child(2){
+        justify-self: first baseline;
+    }
 }
 
 @media screen and (min-width: 600px){
@@ -312,10 +347,14 @@ footer a:hover{
         right: auto;
         left:3em;
     }
+
+    .homeBtn svg{
+        max-width: 3em;
+    }
     
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 740px){
     body{
         max-width: 75vw;
     } 
