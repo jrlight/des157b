@@ -1,0 +1,183 @@
+/* resets/defaults + color variables */
+
+*{
+    box-sizing: border-box;
+    --flagBlue: #aae3ff;
+    --flagPink: #feb2e6;
+    --flagWhite: #ffffff;
+    --accentBlue: #2062a3;
+    --accentPink: #b32799;
+    --semiTransparentFlagBlue: #aae3ffa7;
+    --semiTransparentFlagPink: #feb2e6a7;
+    --baseText: #000000;
+    --semiTransparentBaseText: #0000005d;
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+nav ul, nav ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p, ul, ol{
+    margin: 0;
+    padding: 0;
+    color: var(--baseText);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* font reference */
+/* .freckle-face-regular {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.finger-paint-regular {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font weights: 100, 400, 600, 700, 900;
+  font styles: normal, italic
+} */
+
+/* page style */
+
+body{
+    margin: auto;
+    background-color: var(--flagWhite);
+}
+
+main{
+    margin: 2.5em;
+}
+
+header{
+    margin: 2em;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: "Finger Paint", Serif;
+}
+
+h1 .emphasis{
+    font-size: 1.6em;
+    font-family: "Freckle Face", Cursive;
+}
+
+h2{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3{
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+header h2{
+    margin-bottom: 0;
+}
+
+section{
+    margin-bottom: 2em;
+}
+
+p{
+    margin-bottom: 0.7em;
+    text-indent: 1.5em;
+}
+
+a{
+    display: block;
+    margin-bottom: 1em;
+    padding: 0 0.1em;
+    color: var(--accentBlue);
+    transition: all 0.2s ease-out;
+}
+
+a:hover{
+    color: var(--accentPink);
+}
+
+ul{
+    padding-inline-start: 1.8em;
+}
+
+li{
+    padding-bottom: 0.3em;
+}
+
+/* .homeBtn path:hover{
+    stroke: var(--accentBlue);
+} */
+
+main a{
+    text-align: center;
+}
+
+#sources a{
+    text-align: left;
+}
+
+
+.plainText{
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a:hover{
+    outline: solid 0.1em var(--semiTransparentFlagBlue);
+}
+
+.homeLink{
+    color: var(--accentPink);
+    justify-self: center;
+}
+
+.homeLink:hover{
+    outline: solid 0.3em var(--semiTransparentFlagPink);
+    color: var(--accentBlue);
+}
+
+
+@media screen and (min-width: 600px){
+    body{
+        max-width: 90vw;
+    }
+
+
+}
+
+@media screen and (min-width: 740px){
+    body{
+        max-width: 75vw;
+    } 
+
+}
+
+@media screen and (min-width: 900px){
+    body{
+        max-width: 60vw;
+    } 
+
+}
