@@ -108,6 +108,11 @@ p{
     margin-bottom: 0.5em;
 }
 
+main p{
+    text-indent: 1.5em;
+    margin-bottom: 1.5em;
+}
+
 a{
     display: block;
     margin-bottom: 1em;
@@ -207,10 +212,26 @@ ul{
 
 main a{
     text-align: center;
+    margin-top: 2em;
+}
+
+.pageLink a{
+    text-align: center;
+    margin-top: 0;
 }
 
 #sources a{
+    margin-top: 0;
+    display: inline;
     text-align: left;
+}
+
+#sources li{
+    margin-bottom: 0.6em;
+}
+
+#sources h2{
+    margin-bottom: 0.4em;
 }
 
 
@@ -224,6 +245,7 @@ main a{
 footer{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3em;
 }
 
 footer a:hover{
@@ -308,8 +330,6 @@ footer a:hover{
 }
 
 .ac .ac-header button{
-    /* font-family: "Delius", cursive;
-    font-size: 1.3rem; */
     background: var(--flagBlue);
     margin-left: 0.5em;
     font-family: "Nunito Sans", Arial, sans-serif;
@@ -319,6 +339,11 @@ footer a:hover{
 
 .ac .ac-text:last-child{
     padding: 0.5em 0.6em 0.9em;
+}
+
+.ac .ac-text{
+    font: 15px/24px "Nunito Sans", Arial, sans-serif;
+    text-indent: 0;
 }
 
 @media screen and (min-width: 520px){
@@ -370,6 +395,19 @@ footer a:hover{
 @media screen and (min-width: 750px){
     body{
         max-width: 60vw;
+    } 
+
+    .homeBtn{
+        position: fixed;
+        top:0;
+        right: auto;
+        left:10em;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    body{
+        max-width: 50vw;
     } 
 
     .homeBtn{
