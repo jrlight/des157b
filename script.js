@@ -18,6 +18,20 @@
     
     if(mode === 'dark'){
         document.addEventListener('mousemove', handleMouseMove)
+
+        document.addEventListener('keydown', function(event){
+            if(event.key === ' ' || event.key === 'Escape'){
+                mask.className = 'switch';
+                body.className = 'switch';
+                h1.className = 'switch';
+                banner.className = 'switch';
+                lightSwitch.src = 'images/switch_on.svg';
+                for (const section of sections) {
+                    section.className = 'switch';
+                }
+                mode = 'light';
+            }
+        })
     }
 
     lightSwitch.addEventListener('click', function() {
