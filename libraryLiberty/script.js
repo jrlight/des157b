@@ -1,9 +1,24 @@
 (function(){
     'use strict';
 
-    console.log('reading js');
-
-    $('#title').t();
+    $('.title').t({
+        blink:300,
+        fin:function(){
+            setTimeout(function(){
+                $('.title').find('.t-caret').css({opacity:0});
+            }, 2000)
+        }
+    });
+    $('.directions').t({
+        delay:2.4,
+        blink:300,
+        fin:function(){
+            setTimeout(function(){
+                $('.directions').find('.t-caret').css({opacity:0});
+            }, 2000)
+            
+        }
+    });
     
     
     const smiley = new Vivus('smiley', {start:'manual', duration:90});
@@ -21,9 +36,7 @@
     const svgBtns = document.querySelectorAll('button');
 
     drawZone.addEventListener('click', draw);
-    
-    console.log(svgBtns);
-    
+        
     for(let i = 0; i < svgBtns.length; i++){
         svgBtns[i].addEventListener('click', function(){
             svgIdx = i;

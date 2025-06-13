@@ -4,6 +4,7 @@
     --smiley: #00ff0c;
     --star: #ff0;
     --exclamation: rgb(255, 75, 25);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav ul, nav ol{
@@ -104,13 +105,55 @@ svg{
     height: 4.2em;
 }
 
+#mobileTxt{
+    display: block;
+}
 
-#title{
+#desktopTxt{
+    display: none;
+}
+
+.typed{
+    display: none;
+    font-family: inherit;
+}
+
+.title{
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
     color: white;
     background-color: black;
     z-index: 2;
-    font-size: 2em;
+    font-weight: 400;
+    font-size: 2rem;
+    width: min-content;
+    text-align: center;
+}
+
+.directions{
+    position: absolute;
+    transform: translate(-50%, 0);
+    top:4rem;
+    left: 50%;
+    color: white;
+    background-color: black;
+    z-index: 2;
+    font-size: 1em;
+    text-align: center;
+}
+
+#mobileTxt .directions{
+    top:6rem;
+}
+
+@media screen and (min-width:850px) {
+    #mobileTxt{
+        display: none;
+    }
+
+    #desktopTxt{
+        display: block;
+    }
+
 }
