@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
     --building: #120f1b;
+    --smiley: #00ff0c;
+    --star: #ff0;
+    --exclamation: rgb(255, 75, 25);
 }
 
 nav ul, nav ol{
@@ -21,17 +24,26 @@ h1, h2, h3, p, ul, ol{
 a{
     text-decoration: none;
 }
+
+button{
+    border: 0;
+    padding: 0;
+    background: none;
+}
 /* end resets */
 
 body{
     position: absolute;
     width: 100vw;
+    display: flex;
 }
 
-svg, object{
+svg{
     max-width: 8em;
     position: absolute;
     z-index: 1;
+    top: -10em;
+    left: -10em;
 }
 
 #drawZone{
@@ -41,6 +53,57 @@ svg, object{
     background-color: var(--building);
     z-index: 0;
 }
+
+#svgChoose{
+    width: 20vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#svgChoose button{
+    width: 5em;
+    height: 5em;
+    background: var(--building);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+#smileyBtn{
+    color: var(--smiley);
+}
+
+#smileyBtn:hover{
+    outline: outset 0.3em var(--smiley);
+}
+
+#starBtn{
+    color: var(--star);
+}
+
+#starBtn:hover{
+    outline: outset 0.3em var(--star);
+}
+
+#exclamationBtn{
+    color: var(--exclamation);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#exclamationBtn:hover{
+    outline: outset 0.3em var(--exclamation);
+}
+
+#exclamationIcon{
+    height: 4.2em;
+}
+
 
 #title{
     position: absolute;

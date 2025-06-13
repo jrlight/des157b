@@ -23,32 +23,76 @@
 
     <!-- <object id="smiley" type="image/svg+xml" data="images/smiley.svg"></object> -->
 
-    <svg id="smiley" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.04 95.97">
-        <defs>
-            <style>
-            .b {
-                stroke-linejoin: round;
-                stroke-linecap: round; 
-            }
-
-            .b, .c {
-                fill: none;
-                stroke: #00ff0c;
-                stroke-width: 3px;
-            }
-
-            .c {
-                stroke-miterlimit: 10;
-            }
-            </style>
-        </defs>
-        <path class="c" d="M13,18.69c27.29-39.94,103.97-5.17,73.5,51.77C58.21,123.31-29.71,81.19,13,18.69Z"/>
-        <path class="b" d="M59.5,40.82c-1.35-12.88-.03-29.53,1.89-15.34,1.76,12.96-.93,24.47-1.89,15.34Z"/>
-        <path class="b" d="M20.16,55.32h55.49c.85,25.48-45.07,47.46-55.49,0Z"/>
-        <path class="b" d="M32.96,34.36c-.51,12.56,3.06,15.01,3.06-4.89s-2.55-7.67-3.06,4.89Z"/>
-    </svg>
-        
     
     </div>
+    <div id="svgChoose">
+        <button type="button" id="smileyBtn">
+            <img id="smileyIcon" src="images/smiley.svg">
+        </button>
+        <button type="button" id="starBtn">
+            <img id="starIcon" src="images/star.svg">
+        </button>
+        <button type="button" id="exclamationBtn">            
+            <img id="exclamationIcon" src="images/exclamation.svg">
+        </button>
+    </div>
+
+
+            <svg id="smiley" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.04 95.97">
+            <defs>
+                <style>
+                .s1 {
+                    stroke-linejoin: round;
+                    stroke-linecap: round; 
+                }
+
+                .s1, .s2 {
+                    fill: none;
+                    stroke: #00ff0c;
+                    stroke-width: 3px;
+                }
+
+                .s2 {
+                    stroke-miterlimit: 10;
+                }
+                </style>
+            </defs>
+            <path class="s2" d="M13,18.69c27.29-39.94,103.97-5.17,73.5,51.77C58.21,123.31-29.71,81.19,13,18.69Z"/>
+            <path class="s1" d="M59.5,40.82c-1.35-12.88-.03-29.53,1.89-15.34,1.76,12.96-.93,24.47-1.89,15.34Z"/>
+            <path class="s1" d="M20.16,55.32h55.49c.85,25.48-45.07,47.46-55.49,0Z"/>
+            <path class="s1" d="M32.96,34.36c-.51,12.56,3.06,15.01,3.06-4.89s-2.55-7.67-3.06,4.89Z"/>
+        </svg>
+
+        <svg id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.68 119.49">
+            <defs>
+                <style>
+                .st {
+                    fill: none;
+                    stroke: #ff0;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 3px;
+                }
+                </style>
+            </defs>
+            <polygon class="st" points="71.11 11.37 31.74 109.25 114.87 48.13 13.43 49.49 100.91 108.73 71.11 11.37"/>
+        </svg>
+
+        <svg id="exclamation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.15 155.49">
+            <defs>
+                <style>
+                .e1 {
+                    fill: none;
+                    stroke:rgb(255, 68, 17);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 3px;
+                }
+                </style>
+            </defs>
+            <polygon class="e1" points="32.17 11.37 82.21 17.36 47.15 111.32 32.17 105.87 32.17 11.37"/>
+            <polygon class="e1" points="29.01 119.49 46.38 123.53 44.17 145.79 20.94 142.36 29.01 119.49"/>
+        </svg>
+
 </body>
 </html>
