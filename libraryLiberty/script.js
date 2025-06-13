@@ -9,6 +9,7 @@
             }, 2000)
         }
     });
+
     $('.directions').t({
         delay:2.4,
         blink:300,
@@ -16,7 +17,22 @@
             setTimeout(function(){
                 $('.directions').find('.t-caret').css({opacity:0});
             }, 2000)
-            
+        }
+    });
+
+    $('.credits').t({
+        delay:8,
+        blink:300,
+        init:function(){
+            $('.credits').find('.t-caret').css({opacity:0});  
+        },
+        typing:function(){
+            $('.credits').find('.t-caret').css({opacity:1});  
+        },
+        fin:function(){
+            setTimeout(function(){
+                $('.credits').find('.t-caret').css({opacity:0});
+            }, 1500) 
         }
     });
     

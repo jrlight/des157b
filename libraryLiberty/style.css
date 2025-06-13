@@ -147,6 +147,27 @@ svg{
     top:6rem;
 }
 
+.credits{
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom:1rem;
+    left: 50%;
+    color: white;
+    background-color: black;
+    z-index: 2;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+a{
+    color: #8e68ff;
+}
+
+a:hover{
+    color: #2ed2f3;
+}
+
 @media screen and (min-width:850px) {
     #mobileTxt{
         display: none;
